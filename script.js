@@ -60,5 +60,5 @@ function loadWeatherAlt(city) {
 
 function error() {
 	alert('Please this app need to use your location');
-	navigator.geolocation.getCurrentPosition(one, two);
+	navigator.geolocation.getCurrentPosition(loadWeather, error);
 }
