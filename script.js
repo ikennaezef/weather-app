@@ -26,7 +26,7 @@ function loadWeather(e) {
 			icon.innerText = '';
 			let img = document.createElement('img');
 			img.id = 'image';
-			img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
+			img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
 			icon.appendChild(img);
 			locationEl.innerText = data.sys.country;
 			temp.innerText = (Math.floor((data.main.temp - 273) * 100))/100;
@@ -47,7 +47,7 @@ function loadWeatherAlt(city) {
 			icon.innerText = '';
 			let img = document.createElement('img');
 			img.id = 'image';
-			img.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
+			img.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
 			icon.appendChild(img);
 			locationEl.innerText = data.sys.country;
 			temp.innerText = (Math.floor((data.main.temp - 273) * 100))/100;
