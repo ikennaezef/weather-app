@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Weather App</title>
+</head>
+<body>
+	
+	<header id="header">
+		<h1>Weather App</h1>
+	</header>
+	<div class="wrapper">
+		<div>
+			<div class="location-wrapper">
+				<span id="location"></span>
+				<div class="select-wrapper">
+					<label for="cityselect">Select the city</label>
+					<select name="cityselect" id="city-select">
+						<option value="Your Location">Your Location</option>
+						<option value="London">London</option>
+						<option value="Lagos">Lagos</option>
+						<option value="Madrid">Madrid</option>
+						<option value="Moscow">Moscow</option>
+						<option value="Dubai">Dubai</option>
+						<option value="Milan">Milan</option>
+						<option value="Sydney">Sydney</option>
+						<option value="Amsterdam">Amsterdam</option>
+						<option value="Paris">Paris</option>
+						<option value="Cairo">Cairo</option>
+					</select>
+				</div>
+			</div>
+
+			
+			<span id="icon"></span>
+		</div>
+		
+		<div class="temp-wrapper">
+			<span id="temperature"></span>C
+		</div>
+		<div class="others">
+			<p><span id="description"></span></p>
+			<p>Wind Speed: <span id="wind"></span> m/s</p>
+			<p>Pressure: <span id="pressure"></span> hPa</p>
+			<p>Humidity: <span id="humidity"></span> %</p>
+		</div>
+		
+	</div>						
+
+	<script src="script.js"></script>
+</body>
+</html>
