@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=> navigator.geolocation.getCurr
 function loadWeather(e) {
 	let lat = e.coords.latitude;
 	let long = e.coords.longitude;
-	let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=39b5e89431eef50396f2c1f28373848b`;
+	let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=39b5e89431eef50396f2c1f28373848b`;
 
 	fetch(url)
 		.then(res => res.json())
@@ -39,7 +39,7 @@ function loadWeather(e) {
 
 // Weather data for other locations
 function loadWeatherAlt(city) {
-	let urlAlt = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=39b5e89431eef50396f2c1f28373848b`;
+	let urlAlt = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=39b5e89431eef50396f2c1f28373848b`;
 
 	fetch(urlAlt)
 		.then(res => res.json())
